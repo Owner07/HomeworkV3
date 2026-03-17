@@ -1,3 +1,5 @@
+package HomeWork1;
+
 public class Homework1_5 {
     public static void main(String[] args) {
         int q = 32;
