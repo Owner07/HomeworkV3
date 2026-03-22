@@ -21,7 +21,7 @@ public class HomeWork2_5 {
         } int number = scanner.nextInt();
 
         while (number <= 0){
-            System.out.println("Введено отрицательное число или ноль, пжлст введите целое положительное: ");
+            System.out.println("Введено отрицательное число или нуль, пжлст введите целое положительное: ");
             while (!scanner.hasNextInt()){
                 scanner.next();
             } number = scanner.nextInt();
