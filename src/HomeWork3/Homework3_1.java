@@ -19,14 +19,12 @@ public class Homework3_1 {
             for (int i = 0; i < size; i++) {
                 array[i] = random.nextInt(100);
                 System.out.print(array[i] + " ");
-                System.out.println();
-            }
+            }System.out.println();
         } else if(v == 1){
             System.out.println("Пжлст заполните элементы масива в ручную, но не больше: " + size);
             for (int i = 0; i < size; i++) {
                 System.out.print("Элемент [" + i + "]: ");
                 array[i] = scanner.nextInt();
-
         }
             {
                 System.out.println("Получен массив веденный пользователем в ручную: ");
@@ -39,7 +37,14 @@ public class Homework3_1 {
     }else{
             System.out.println("Введите 1 или 2");
         }scanner.close();
-        Arrays.sort(array);
-        System.out.println(Arrays.toString(array));
+        System.out.println("Прямой вывод: ");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
+        System.out.println("Обратный: ");
+        for (int i = array.length - 1; i >= 0; i--){
+            System.out.print(array[i] + " ");
+        }
     }
 }
