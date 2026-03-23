@@ -18,8 +18,9 @@ public class Homework3_6  {
             for (int i = 0; i < size; i++) {
                 array[i] = random.nextInt(100);
                 System.out.print(array[i] + " ");
-                System.out.println();
+
             }
+            System.out.println();
         } else if (v == 1) {
             System.out.println("Пжлст заполните элементы масива в ручную, но не больше: " + size);
             for (int i = 0; i < size; i++) {
@@ -38,8 +39,19 @@ public class Homework3_6  {
         } else {
             System.out.println("Введите 1 или 2");
         }
-        scanner.close();
-        Arrays.sort(array);
-        System.out.println(Arrays.toString(array));
+        boolean arr = true;
+        for(int i = 1; i < array.length; i++){
+            if (array[i] <= array[i - 1]){
+                arr = false;
+                break;
+            } else {
+                arr =  true;
+            }
+        }
+        if (arr){
+            System.out.println("Good");
+        }else {
+            System.out.println("No good");
+        }
     }
 }
