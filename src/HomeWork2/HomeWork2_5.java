@@ -27,6 +27,6 @@ public class HomeWork2_5 {
             } number = scanner.nextInt();
         } for(int i =1; i <= number; i++){
             sumnumber = sumnumber + i;
-        } System.out.println("Результат: " + sumnumber);
+        } System.out.println("Рез: " + sumnumber);
     }
 }
