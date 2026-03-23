@@ -18,8 +18,8 @@ public class Homework3_4 {
             for (int i = 0; i < size; i++) {
                 array[i] = random.nextInt(100);
                 System.out.print(array[i] + " ");
-                System.out.println();
             }
+            System.out.println();
         } else if (v == 1) {
             System.out.println("Пжлст заполните элементы масива в ручную, но не больше: " + size);
             for (int i = 0; i < size; i++) {
@@ -38,8 +38,14 @@ public class Homework3_4 {
         } else {
             System.out.println("Введите 1 или 2");
         }
-        scanner.close();
-        Arrays.sort(array);
-        System.out.println(Arrays.toString(array));
+        int sumnull = 0;
+        for (int i = 0; i < array.length; i++){
+            if (array[i] == 0){
+                sumnull++;
+                System.out.println("Количество элементов с 0: " + sumnull);
+            }
+        }if(sumnull == 0){
+            System.out.println("No zero");
+        }
     }
 }
