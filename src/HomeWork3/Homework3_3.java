@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Homework3_3  {
+public class Homework3_3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
@@ -18,7 +18,6 @@ public class Homework3_3  {
             for (int i = 0; i < size; i++) {
                 array[i] = random.nextInt(100);
                 System.out.print(array[i] + " ");
-                System.out.println();
             }
         } else if (v == 1) {
             System.out.println("Пжлст заполните элементы масива в ручную, но не больше: " + size);
@@ -39,7 +38,21 @@ public class Homework3_3  {
             System.out.println("Введите 1 или 2");
         }
         scanner.close();
-        Arrays.sort(array);
-        System.out.println(Arrays.toString(array));
+        int min = array[0];
+        int max = array[0];
+        int minindex = 0;
+        int maxindex = 0;
+        for (int i = 1; i < array.length; i++){
+            if (array[i] < min){
+                min = array[i];
+                minindex = i;
+            }if (array[i] > max) {
+                max = array[i];
+                maxindex = i;
+            }
+        }
+        System.out.println();
+        System.out.println("Максимальное i: " + maxindex);
+        System.out.println("Минимальное i: " + minindex);
     }
 }
