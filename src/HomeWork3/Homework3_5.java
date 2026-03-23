@@ -15,11 +15,12 @@ public class Homework3_5  {
         byte v = scanner.nextByte();
         if (v == 2) {
             System.out.println("Заполнение массива случайными числами:");
+            System.out.print("Без замены: ");
             for (int i = 0; i < size; i++) {
                 array[i] = random.nextInt(100);
                 System.out.print(array[i] + " ");
-                System.out.println();
             }
+            System.out.println();
         } else if (v == 1) {
             System.out.println("Пжлст заполните элементы масива в ручную, но не больше: " + size);
             for (int i = 0; i < size; i++) {
@@ -38,8 +39,11 @@ public class Homework3_5  {
         } else {
             System.out.println("Введите 1 или 2");
         }
-        scanner.close();
-        Arrays.sort(array);
-        System.out.println(Arrays.toString(array));
+        for (int i = 0; i < array.length / 2; i++){
+            int temp = array[i];
+            array[i] = array[array.length -1 - i];
+            array[array.length -1 - i] = temp;
+        }
+        System.out.println("Замена: " + Arrays.toString(array));
     }
 }
