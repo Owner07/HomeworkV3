@@ -39,7 +39,16 @@ public class Homework3_2 {
             System.out.println("Введите 1 или 2");
         }
         scanner.close();
-        Arrays.sort(array);
-        System.out.println(Arrays.toString(array));
+        int min = array[0];
+        int max = array[0];
+        for (int i = 1; i < array.length; i++){
+            if (array[i] < min){
+                min = array[i];
+            }if (array[i] > max) {
+                max = array[i];
+            }
+        }
+        System.out.println("Максимальное значение: " + max);
+        System.out.println("Минимальное значение: " + min);
     }
 }
