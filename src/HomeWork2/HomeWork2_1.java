@@ -9,7 +9,7 @@ public class HomeWork2_1 {
         if (a % 2 == 0){
             System.out.println("Good");
         }else {
-            System.out.println("No good");
+            System.out.print("No good");
         }
     }
 

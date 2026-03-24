@@ -11,7 +11,7 @@ public class HomeWork2_2 {
         } else if (t > -20) {
             System.out.println("Normal"); // прописывать условие t <= -5 излишне т.к первое условие задает верхнюю границу а второе приравниевт к -5
         } else if (t < -20) {
-            System.out.println("Cold");
+            System.out.println("C0ld");
         }
     }
 }
