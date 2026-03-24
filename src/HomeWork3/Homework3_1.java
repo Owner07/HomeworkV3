@@ -9,7 +9,7 @@ public class Homework3_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
-        System.out.print("Введите размер массива: ");
+        System.out.print("Введите размер массива:  ");
         int size = scanner.nextInt();
         int[] array = new int[size];
         System.out.println("Выберите модель заполнения 1 - В ручную, 2 - Автоматически");

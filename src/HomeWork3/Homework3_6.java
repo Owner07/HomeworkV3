@@ -37,7 +37,7 @@ public class Homework3_6  {
             }
 
         } else {
-            System.out.println("Введите 1 или 2");
+            System.out.println("Введите 1 или  2");
         }
         boolean arr = true;
         for(int i = 1; i < array.length; i++){

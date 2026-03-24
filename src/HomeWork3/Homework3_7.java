@@ -15,7 +15,7 @@ Input: [9,9,9]
 Output: [1,0,0,0]
      */
     public static void main(String[] args) {
-        int[] mass = {9, 9, 9};
+        int[] mass = {9, 9};
         System.out.println(Arrays.toString(mass));
         for (int i = mass.length - 1; i >= 0; i--){
             if(mass[i] < 9){

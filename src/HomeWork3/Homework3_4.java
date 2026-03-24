@@ -28,7 +28,7 @@ public class Homework3_4 {
 
             }
             {
-                System.out.println("Получен массив веденный пользователем в ручную: ");
+                System.out.println("Получен массив веденный пользователем в ручную:  ");
                 int i;
                 for (i = 0; i < size; i++) {
                     System.out.println("Элемент [" + i + "]: " + array[i]);

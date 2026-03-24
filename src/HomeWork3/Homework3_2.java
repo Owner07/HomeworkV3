@@ -21,7 +21,7 @@ public class Homework3_2 {
                 System.out.println();
             }
         } else if (v == 1) {
-            System.out.println("Пжлст заполните элементы масива в ручную, но не больше: " + size);
+            System.out.println("Пжлста заполните элементы масива в ручную, но не больше: " + size);
             for (int i = 0; i < size; i++) {
                 System.out.print("Элемент [" + i + "]: ");
                 array[i] = scanner.nextInt();
