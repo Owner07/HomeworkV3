@@ -15,11 +15,11 @@ public class ATM {
 
     public void contributeMoney() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Внесите количество купюр номиналом 20 рублей : ");
+        System.out.println("Внесите количество купюр номиналом 20 рублей. : ");
         int count20 = scanner.nextInt();
-        System.out.println("Внесите количество купюр номиналом 50 рублей : ");
+        System.out.println("Внесите количество купюр номиналом 50 рублей. : ");
         int count50 = scanner.nextInt();
-        System.out.println("Внесите количество купюр номиналом 100 рублей : ");
+        System.out.println("Внесите количество купюр номиналом 100 рублей. : ");
         int count100 = scanner.nextInt();
         System.out.println("Вы внесли купюрами по 20: " + count20 * 20);
         System.out.println("Вы внесли купюрами по 50: " + count50 * 50);
