@@ -6,8 +6,8 @@ public class CreditCard {
     private int id;
     private int balance;
 
-    public CreditCard(int balance) {
-        this.id = new Random().nextInt((200-100) + 1) + 100; // прочитать про генерацию уида
+    public CreditCard(int id, int balance) {
+        this.id = id;
         this.balance = balance;
     }
 

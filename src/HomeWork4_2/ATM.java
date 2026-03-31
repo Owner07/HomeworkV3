@@ -35,36 +35,45 @@ public class ATM {
         System.out.println("Общее количество средств на счету: " + x);
         return x;
     }
-    public boolean withdrawal(int amount){
-        if (amount <= 0) return false;
-        if (amount > getTotalAmount()) return false;
-        double a100 = Math.floor ((double) amount / 100);
-        double a50 = Math.floor ((amount - a100 * 100) / 50);
-        double a20 = Math.floor((amount - a100 * 100 - a50 * 50) / 20);
-        if(a100 <= count100){
-            count100 -= a100;
-        }else {
-            a50 += (a100 - count100) * 2;
-            count100 = 0;
+    public boolean withdrawal(int amount) {
+        if (amount <= 0) {
+            System.out.println("Сумма должна быть положительной");
+            return false;
         }
-        if(a50 <= count50){
-            count50 -= a50;
-        }else {
-            double x = (a50 - count50);
-            if(x % 2 == 0){
-                x = x * 2.5;
-            }else {
-                x = x * 2;
-            }
-            a20 += (x);
-            count50 = 0;
+
+        if (amount > getTotalAmount()) {
+            System.out.println("Недостаточно средств на счету");
+            return false;
         }
+
+        int w20 = count20;
+        int w50 = count50;
+        int w100 = count100;
+        int q = amount;
+        int a100 = Math.min(q / 100, count100);
+        q -= a100 * 100;
+        int a50 = Math.min(q / 50, count50);
+        q -= a50 * 50;
+        int a20 = q / 20;
+        q -= a20 * 20;
+
+        if (q != 0 || a20 > count20) {
+            count20 = w20;
+            count50 = w50;
+            count100 = w100;
+            System.out.println("Невозможно выдать запрошенную сумму доступными купюрами");
+            return false;
+        }
+
+        count100 -= a100;
+        count50 -= a50;
         count20 -= a20;
-        System.out.println("Купюр по  20: " + count20 + "\nСняли количество купюр: " + a20);
-        System.out.println("Купюр по  50: " + count50 + "\nСняли количество купюр: " + a50);
-        System.out.println("Купюр по  100: " + count100 + "\nСняли количество купюр: " + a100);
+
+        System.out.println("Выдано купюр по 100: " + a100);
+        System.out.println("Выдано купюр по 50: " + a50);
+        System.out.println("Выдано купюр по 20: " + a20);
+        System.out.println("Общая сумма выдачи: " + amount);
         getTotalAmount();
         return true;
     }
-
 }

@@ -12,7 +12,7 @@ public class Main {
     scanner.close();
     boolean status = Atm.withdrawal(amount);
     if (!status) {
-        System.out.println("Операция не выполнена! ");
+        System.out.println("Операция не выполнена! 10");
     }
     }
 }
