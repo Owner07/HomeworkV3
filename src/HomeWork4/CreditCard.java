@@ -1,6 +1,6 @@
 package HomeWork4;
 
-import java.util.Random;
+
 
 public class CreditCard {
     private int id;

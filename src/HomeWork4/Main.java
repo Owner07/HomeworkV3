@@ -13,7 +13,7 @@ public class Main {
         int id1 = scanner.nextInt();
         System.out.println("Введите баланс карты №2: ");
         int balance1 = scanner.nextInt();
-        System.out.println("Введите ID Карты №3: ");
+        System.out.println("Введите ID Карты №3:  ");
         int id2 = scanner.nextInt();
         System.out.println("Введите баланс карты №3: ");
         int balance2 = scanner.nextInt();

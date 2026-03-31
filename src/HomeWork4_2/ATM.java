@@ -42,7 +42,7 @@ public class ATM {
         }
 
         if (amount > getTotalAmount()) {
-            System.out.println("Недостаточно средств на счету");
+            System.out.println("Недостаточно средств на счету ");
             return false;
         }
 

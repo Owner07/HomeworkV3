@@ -7,7 +7,7 @@ public class Main {
     ATM Atm = new ATM(10,0,0);
     Atm.contributeMoney();
     Scanner scanner = new Scanner(System.in);
-    System.out.println("Введите сумму сколько хотите снять: ");
+    System.out.println("Введите сумму сколько хотите снять:");
     int amount = scanner.nextInt();
     scanner.close();
     boolean status = Atm.withdrawal(amount);
