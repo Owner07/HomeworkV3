@@ -2,7 +2,7 @@ package HomeWork5.two;
 
 public class Rectangle extends Figure{
     public Rectangle(int side, int side2, int side3, int side4) {
-        super(side, side2, side3, side4);
+        super(side);
     }
 
     public void perimeter(){
