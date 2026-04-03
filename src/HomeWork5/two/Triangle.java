@@ -10,6 +10,6 @@ public class Triangle extends Figure{
     }
 
     public void square(){
-        System.out.println("Площадь треугольник = " + side * (side4 / 2) + "см");
+        System.out.println("Площадь треугольника = " + side * (side4 / 2) + "см");
     }
 }
