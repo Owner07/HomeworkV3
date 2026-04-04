@@ -5,11 +5,15 @@ public class Circle extends Figure {
         super(side);
     }
 
-    public void perimeter(){
-        System.out.println("Периметр круга = " + (side / 2) * Math.PI);
+    public int perimeter(){
+        int res = (int) ((side * 2) * Math.PI);
+        System.out.println("Периметр круга = " + res + " см");
+        return (int) ((side * 2) * Math.PI);
     }
 
-    public void square(){
-        System.out.println("Площадь круга = " + ((side * side)* Math.PI));
+    public int square(){
+        int res2 = (int) ((side * side)* Math.PI);
+        System.out.println("Площадь круга = " + res2 + " см");
+        return (int) ((side * side)* Math.PI);
     }
 }
