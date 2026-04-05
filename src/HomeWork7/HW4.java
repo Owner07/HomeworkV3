@@ -1,7 +1,7 @@
 package HomeWork7;
 
 public class HW4 {
-    public boolean hasUniqueChars(String str) {
+    public boolean uniq(String str) {
         if (str == null || str.isEmpty()) {
             return false;
         }
@@ -16,7 +16,7 @@ public class HW4 {
 
     public String firstWorld(String[] lines) {
         for (String word : lines) {
-            if (hasUniqueChars(word)) {
+            if (uniq(word)) {
                 return word;
             }
         }
