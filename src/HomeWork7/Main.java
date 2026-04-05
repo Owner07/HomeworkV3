@@ -1,10 +1,11 @@
 package HomeWork7;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         Input input = new Input();
         String[] lines = input.lines();
-
         HW1 calculator = new HW1();
 
     String maxString = calculator.MaxString(lines);
@@ -12,10 +13,17 @@ public class Main {
         String red = "\u001B[31m";
         String green = "\u001B[32m";
         String reset = "\u001B[0m";
-
         String coloredA = red + maxString + reset;
         String coloredB = green + minString + reset;
         System.out.println("Самая длинная строка: ".concat(coloredA).concat(" Количество символов: ").concat(String.valueOf(maxString.length())));
         System.out.println("Самая короткая строка: ".concat(coloredB).concat(" Количество символов: ").concat(String.valueOf(minString.length())));
+
+        HW2 sorter = new HW2();
+        String[] sorted = sorter.sortString(lines);
+        System.out.println(Arrays.toString(sorted));
+
+        HW3 sString = new HW3();
+        sString.avg(lines);
+
     }
 }
