@@ -25,5 +25,7 @@ public class Main {
         HW3 sString = new HW3();
         sString.avg(lines);
 
+        HW4 unq = new HW4();
+        unq.printResult(lines);
     }
 }
