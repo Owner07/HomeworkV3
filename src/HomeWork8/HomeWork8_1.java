@@ -15,20 +15,11 @@ public class HomeWork8_1 {
         Set<Integer> num = new HashSet<>();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите коллекцию чисел");
-        int i = 0;
-        while (i < 5) {
-            System.out.print("Введите число (" + (5 - num.size()) + " осталось): ");
-            int input = scanner.nextInt();
-            num.add(input);
-            i++;
-            System.out.println(num);
-        }
-        scanner.close();
         for (int i = 0; i < 5; i++) {
             System.out.print("Введите число (" + (5 - num.size()) + " осталось): ");
             int input = scanner.nextInt();
             num.add(input);
             System.out.println(num);
-        }
+        }scanner.close();
     }
 }
