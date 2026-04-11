@@ -10,11 +10,12 @@ import java.util.Set;
 Вывести результат на экран.
 При решении использовать коллекции.
  */
+
 public class HomeWork8_1 {
     public static void main(String[] args) {
         Set<Integer> num = new HashSet<>();
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите коллекцию чисел");
+        System.out.println("Введите коллекцию чисел: ");
         for (int i = 0; i < 5; i++) {
             System.out.print("Введите число (" + (5 - num.size()) + " осталось): ");
             int input = scanner.nextInt();

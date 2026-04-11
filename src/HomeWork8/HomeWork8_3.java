@@ -11,14 +11,12 @@ public class HomeWork8_3 {
         for (int i = 0; i < symbols.length; i++) {
             symbols[i] = scanner.nextLine();
         }
-
         Map<String, Boolean> res = Arrays.stream(symbols)
                 .collect(Collectors.toMap(
                         str -> str,
                         str -> false,
                         (existing, replacement) -> true
                 ));
-
         System.out.println(res);
     }
 }

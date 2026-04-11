@@ -12,7 +12,6 @@ public class Main {
         scanner.nextLine();
         animalist.addAnimal("Кошка");
         animalist.addAnimal("Собака");
-        animalist.addAnimal("Попугай");
         if(a == 1){
             System.out.println("Введите название животного");
             String animal = scanner.nextLine();

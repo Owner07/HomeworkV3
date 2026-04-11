@@ -13,7 +13,7 @@ public class Animals {
         if(!animals.isEmpty()) {
             animals.removeLast();
         } else {
-            System.out.println("Список пуст, нечего удалять!");
+            System.out.println("Список пуст, нечего удалять! ");
         }
     }
 
